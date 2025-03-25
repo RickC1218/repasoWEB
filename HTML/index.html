@@ -1,22 +1,108 @@
-<h1>Portafolio de RickErazo</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">  <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Escalabilidad de la página -->
+    <title>Portafolio Curso HTML</title> <!-- Título de la página -->
 
-<h3>Ejemplo práctico: @midudev</h3>
+    <meta name="description" content="Portafolio de RickErazo de repaso de HTML, curso de Midudev"> <!-- Descripción de la página -->
 
-<p>Programador Jr. e <strong>Ingeniero en Ciencias de la computación.</strong></p>
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Portafolio Curso HTML"> <!-- Título de la página -->
+    <meta property="og:description" content="Portafolio de RickErazo de repaso de HTML, curso de Midudev"> <!-- Descripción de la página -->
+    <meta property="og:image" content="images/avatar.jpg"> <!-- Imagen de la página -->
+    <meta property="og:image:alt" content="Avatar RickErazo"> <!-- Descripción de la imagen -->
 
-<h2>Experiencia</h2>
 
-<ul>
-  <li class="list-item">PPM - Actualmente</li>
-  <li class="list-item">Logiciel - 2024</li>
-  <li class="list-item">Radical - 2024</li>
-</ul>
+    <link rel="alternate" href="https://midu.dev/en" hreflang="es-EC"> <!-- Enlace alternativo -->
+    <link rel="canonical" href="https://midu.dev"> <!-- Enlace canónico -->
 
-<img 
-  id="avatar-rickErazo"
-  title="RickErazo"
-  src="./images/avatar.jpg" 
-  alt="Avatar RickErazo" 
-  width=200
-  height=200
-/>
+    <meta name="robots" content="index, follow"> <!-- Indexación de la página -->
+    <meta name="theme-color" content="#eeef17">  <!-- Color de la barra de navegación -->
+
+    <link rel="icon" href="images/avatar.jpg" type="image/x-icon">  <!-- Icono de la página -->
+  </head>
+
+  <body>
+    <header>
+      <h1>Portafolio de RickErazo 🤖</h1>
+      <h3>Ejemplo práctico: @midudev</h3>
+
+      <nav>
+        <a href="#experiencia">Experiencia</a> <!-- Enlace interno -->
+        <a href="#proyectos">Proyectos</a> <!-- Enlace interno -->
+        <a href="https://github.com/RickC1218" target="_blank" rel="noreferrer">GitHub</a> <!-- Enlace externo -->
+      </nav>
+    </header>
+
+    <main>
+      <p>Programador Jr. e <strong>Ingeniero en Ciencias de la computación.</strong></p>
+  
+      <h2 id="experiencia">Experiencia</h2>
+      <ul>
+        <li class="list-item">PPM - Actualmente</li>
+        <li class="list-item">Logiciel - 2024</li>
+        <li class="list-item">Radical - 2024</li>
+      </ul>
+
+      <img 
+        id="avatar-rickErazo"
+        title="RickErazo"
+        src="./images/avatar.jpg" 
+        alt="Avatar RickErazo" 
+        width=200
+        height=200
+      />
+  
+      <h2 id="proyectos">Proyectos realizados</h2>
+      <aside>
+        <header>
+          <h3>
+            Mis tecnologías favoritas
+          </h3>
+        </header>
+        <ol type="a">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+        </ol>
+      </aside>
+      <section>
+        <header>
+          <h3>
+            Proyectos
+          </h3>
+        </header>
+        <article>
+          <h4>Mi primer proyecto JS</h4>
+          <p>Desarrollo de una calculadora con JavaScript</p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+        <article>
+          <h4>Mi primer proyecto React</h4>
+          <p>Desarrollo de una aplicación de tareas con React</p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript, React</small>
+          </footer>
+        </article>
+        <article>
+          <h4>Mi primer proyecto Node.js</h4>
+          <p>Desarrollo de una API con Node.js</p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript, Node.js</small>
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 RickErazo</p>
+      <a href="mailto:ricardoerazoliga@gmail.com">Envíame un correo</a>
+      <a href="tel:+593987202971">Llámame</a>
+    </footer>
+  </body>
+</html>

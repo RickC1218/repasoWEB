@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-EC"> <!-- Lenguaje de la página -->
   <head>
     <meta charset="UTF-8">  <!-- Codificación de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Escalabilidad de la página -->
@@ -21,6 +21,26 @@
     <meta name="theme-color" content="#eeef17">  <!-- Color de la barra de navegación -->
 
     <link rel="icon" href="images/avatar.jpg" type="image/x-icon">  <!-- Icono de la página -->
+  
+    <style>
+      body {
+        background-color: #8baef3;
+      }
+    </style>
+
+    <script>
+      const showBtn = document.getElementById('show');
+      const hideBtn = document.getElementById('hide');
+      const dialog = document.getElementById('dialog');
+    
+      showBtn.addEventListener('click', () => {
+        dialog.showModal();
+      });
+    
+      hideBtn.addEventListener('click', () => {
+        dialog.close();
+      });
+    </script>
   </head>
 
   <body>
@@ -35,6 +55,14 @@
       </nav>
     </header>
 
+    <button id="show">Ver más información</button>
+
+    <dialog id="dialog">
+      <h2>¡Hola! Soy RickErazo</h2>
+      <p>Bienvenido a mi portafolio, aquí encontrarás información sobre mí y mis proyectos.</p>
+      <button id="hide">Cerrar</button>
+    </dialog>
+    
     <main>
       <p>Programador Jr. e <strong>Ingeniero en Ciencias de la computación.</strong></p>
   
@@ -96,6 +124,131 @@
             <small>Tecnologías utilizadas: HTML, CSS, JavaScript, Node.js</small>
           </footer>
         </article>
+      </section>
+
+      <section>
+        <h2>Preguntas frecuentes</h2>
+
+        <details>
+          <summary>¿Qué estudios tienes?</summary>
+          <p>Estudié en la Escuela Politécnica Nacional una ingeniería en ciencias de la computación durante 6 años</p>
+        </details>
+
+        <details>
+          <summary>¿Qué lenguajes de programación conoces?</summary>
+          <p>Conozco JavaScript, Python, Java, C#, C++ y PHP</p>
+        </details>
+
+        <details>
+          <summary>¿Cuáles son tus aficiones?</summary>
+          <p>Me gusta la programación, el diseño gráfico y la música</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Formulario de contacto</h2>
+
+        <form action="/" method="post">
+          <fieldset>
+            <legend>Información personal</legend>
+            <div>
+              <label>
+                Nombre:
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Nombre completo"
+                  required
+                >
+              </label>
+            </div>
+            <div>
+              <label>
+                Email:
+                <input 
+                  type="email" 
+                  name="email" 
+                  id="email"
+                  placeholder="example@example.com"
+                  required
+                >
+              </label>
+            </div>
+
+            <div>
+              <label>
+                Teléfono:
+                <input 
+                  type="tel" 
+                  name="phone" 
+                  id="phone"
+                  placeholder="+5939876543210"
+                  required
+                >
+              </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Información adicional</legend>
+            <div>
+              <label>
+                Mensaje:
+                <textarea 
+                  name="message" 
+                  id="message" 
+                  cols="30" 
+                  rows="10" 
+                  placeholder="Escribe tu mensaje aquí..."
+                  required
+                ></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Otros</legend>
+            <div>
+              <label>
+                Razón de consulta:
+                <select name="reason" id="reason" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="trabajo">Trabajo</option>
+                  <option value="proyecto">Proyecto</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </label>
+            </div>
+
+            <div>
+              <datalist id="languages">
+                <option value="Javascript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="C#"></option>
+                <option value="C++"></option>
+              </datalist>
+              <label>
+                ¿Con qué lenguaje necesitas ayuda?
+                <input list="languages" name="languages">
+              </label>
+            </div>
+
+            <div>
+              <label>
+                Términos y condiciones:
+                <input 
+                  type="checkbox" 
+                  name="terms" 
+                  id="terms" 
+                  required
+                >
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit">Enviar formulario</button>
+        </form>
       </section>
     </main>
 

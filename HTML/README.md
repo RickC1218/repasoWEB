@@ -130,4 +130,52 @@ rel="noopener noreferrer": Aumenta la seguridad si el enlace abre una nueva pest
 
 ```<footer>```: Define un pie de página para una sección o la página completa. Es específico para información como créditos,e nlaces de contacto, etc.
 
-https://youtu.be/3nYLTiY5skU?si=wKsc48ABXpKZ5-Nf&t=4569
+### Formularios
+
+Se utiliza la etiqueta ```<form>``` con dos atributos importantes:
+* method: se usa para especificar cómo se enviarán los datos del formulario al servidor. Pueden ser GET o POST.
+* action: especifica la URL a la que se enviarán los datos del formulario cuando el usuario haga clic en el botón de enviar.
+
+Dentro de los formularios existen etiquetas específicas tales como:
+
+```<fieldset>```: Agrupa visualmente y semánticamente elementos dentro de un formulario. Se usa para organizar mejor los campos relacionados.
+```<legend>```: Define un título para un ```<fieldset>```, proporcionando contexto sobre los elementos dentro del grupo.
+```<label>```: Asocia un texto descriptivo con un campo de entrada (```<input>```, ```<textarea>```, ```<select>```)
+```<input>```: Define un campo de entrada en el formulario. Tiene múltiples tipos:
+* text
+* password
+* email
+* chechbox
+* radio   
+
+```<button>```: es más flexible que input submit dado que permite contenido HTML dentro del butón.
+> **NOTA:** todo botón implementado dentro de un formulario ```<form>``` es de tipo submit.
+
+```<datalist>```: se utiliza para crear una lista de opciones predefinidas para un campo input. Permite mostrar sugerencias al usuario a medida que escribe, sin limitarlo solo a esas opciones.
+
+```<details>```: se utiliza para crear un bloque desplegable que el usuario puede expandir o contraer.
+
+### Etiquetas especiales
+#### video
+Insertar videos
+```
+<video controls width="320">
+  <source src="video.mp4" type="video/mp4">
+  Tu navegador no soporta el video.
+</video>
+```
+#### audio
+Insertar audios
+```
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Tu navegador no soporta el audio.
+</audio>
+```
+#### iframe
+Insertar otra página web
+```
+<iframe src="https://www.example.com" width="400" height="300"></iframe>
+```
+#### dialog
+Sirve para crear cuadros de diálogo modales o emergentes en una página web, como ventanas de confirmación, formularios emergentes, mensajes, etc.
